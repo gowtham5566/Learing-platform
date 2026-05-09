@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+.two{
+    background: rgb(0,51,102);
+    background: linear-gradient(159deg, rgba(44,42,74) 0%, rgba(105,20,14) 25%, rgba(164,66,0) 50%, rgba(60,21,24) 100%);
+}
+
+/*----------- NAV BAR -------------*/
+
+
+
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(6px);
+    padding: 10px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    
+}
+
+#navbar .nav-link{
+  color: antiquewhite;
+}
+
+
+.bold{
+    font-size: 24px;
+    color: antiquewhite;
+}
+
+
+.nav-list{
+    font-weight: bold;
+    font-size: 13px;
+    border: 2px solid transparent;
+}
+
+.nav-list:hover{
+    border-bottom: 2px solid blue;
+    transition: .5s;
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;  
+}
+
+
+/*----------- Home -------------*/
+
+#home .display-3 {
+    font-weight: 700;
+    color: #00ffcc;
+}
+
+
+/*----------- course -------------*/
+
+#course img{
+    height: 150px;
+    width: 150px;
+    margin-left: 55px;
+    margin-top: 10px;
+}
+
+#course .one{
+    font-weight: 700;
+    color: #00ffcc;
+}
+
+
+/*----------- About -------------*/
+
+#about .one{
+    font-weight: 700;
+    color: #00ffcc;
+}
+
+/*----------- card -------------*/
+
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+
+
+.btn-success,
+.btn-primary,
+.btn-danger {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-success:hover,
+.btn-primary:hover,
+.btn-danger:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.6);
+}
+
+
+/*-------------- Contact ------------------*/
+
+.contact-section {
+        padding: 80px 0;
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f') center/cover no-repeat;
+      }
+      .contact-info i {
+        font-size: 25px;
+        background: white;
+        color: #00bcd4;
+        border-radius: 50%;
+        padding: 12px;
+        margin-right: 15px;
+      }
+      .contact-info h5 {
+        color: #00bcd4;
+        margin-bottom: 5px;
+      }
+      .contact-box {
+        background: #fff;
+        color: #000;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      }
+      .form-control {
+        border: none;
+        border-bottom: 2px solid #ddd;
+        border-radius: 0;
+        margin-bottom: 20px;
+        box-shadow: none;
+      }
+      .form-control:focus {
+        border-color: #00bcd4;
+        box-shadow: none;
+      }
+      .btn-send {
+        background-color: #00bcd4;
+        color: #fff;
+        border: none;
+        padding: 10px 0;
+        width: 100%;
+        font-weight: 500;
+      }
+      .btn-send:hover {
+        background-color: #0097a7;
+      }

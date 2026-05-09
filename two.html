@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Learn CSS</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            background: #f5f7ff;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #7420fb, #4c00ff);
+            color: white;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        section {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 35px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        h2,
+        h3 {
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .example-code {
+            background: #111827;
+            color: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            overflow-x: auto;
+            line-height: 1.8;
+            margin-top: 15px;
+        }
+
+        .example-code span {
+            color: #00d9ff;
+        }
+
+        .tag {
+            color: #ff79c6;
+        }
+
+        .property {
+            color: #00e676;
+        }
+
+        .value {
+            color: #ffd54f;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        .topic-number {
+            width: 40px;
+            height: 40px;
+            background: #7420fb;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        @media (max-width:768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header class="text-center shadow">
+        <h1>Learn CSS Easily 🎨</h1>
+        <p class="mt-2">Learn CSS step by step with examples</p>
+    </header>
+
+    <div class="container my-5">
+
+        <!-- Introduction -->
+
+        <section>
+            <div class="topic-number">1</div>
+
+            <h2 class="text-primary">What is CSS?</h2>
+
+            <p class="h6">
+                CSS stands for <b>Cascading Style Sheets</b>.
+                It is used to style HTML elements and make websites look beautiful.
+            </p>
+        </section>
+
+        <!-- Syntax -->
+
+        <section>
+            <div class="topic-number">2</div>
+
+            <h2 class="text-success">CSS Syntax</h2>
+
+            <div class="example-code">
+                selector { <br>
+                &nbsp;&nbsp;<span class="property">property</span>:
+                <span class="value">value</span>; <br>
+                }
+            </div>
+
+            <h4 class="mt-4">Example:</h4>
+
+            <div class="example-code">
+                h1 { <br>
+                &nbsp;&nbsp;<span class="property">color</span>:
+                <span class="value">blue</span>; <br>
+
+                &nbsp;&nbsp;<span class="property">font-size</span>:
+                <span class="value">40px</span>; <br>
+                }
+            </div>
+        </section>
+
+        <!-- Types -->
+
+        <section>
+            <div class="topic-number">3</div>
+
+            <h2 class="text-danger">Types of CSS</h2>
+
+            <h5 class="mt-4">1. Inline CSS</h5>
+
+            <div class="example-code">
+                &lt;<span>h1</span> style="<span class="property">color</span>:<span class="value">red</span>;"&gt;
+                Hello
+                &lt;/<span>h1</span>&gt;
+            </div>
+
+            <h5 class="mt-4">2. Internal CSS</h5>
+
+            <div class="example-code">
+                &lt;<span>style</span>&gt;<br>
+
+                h1 { <br>
+                &nbsp;&nbsp;color: blue; <br>
+                } <br>
+
+                &lt;/<span>style</span>&gt;
+            </div>
+
+            <h5 class="mt-4">3. External CSS</h5>
+
+            <div class="example-code">
+                &lt;<span>link</span> rel="stylesheet" href="style.css"&gt;
+            </div>
+        </section>
+
+        <!-- Selectors -->
+
+        <section>
+            <div class="topic-number">4</div>
+
+            <h2 class="text-warning">CSS Selectors</h2>
+
+            <div class="example-code">
+                h1 { color: red; } <br><br>
+
+                .title { color: blue; } <br><br>
+
+                #heading { color: green; }
+            </div>
+
+            <ul class="mt-4 h6">
+                <li><b>Element Selector</b> → h1</li>
+                <li><b>Class Selector</b> → .title</li>
+                <li><b>ID Selector</b> → #heading</li>
+            </ul>
+        </section>
+
+        <!-- Colors -->
+
+        <section>
+            <div class="topic-number">5</div>
+
+            <h2 class="text-info">Colors in CSS</h2>
+
+            <div class="example-code">
+                color: red; <br>
+                color: #7420fb; <br>
+                color: rgb(255, 0, 0);
+            </div>
+        </section>
+
+        <!-- Box Model -->
+
+        <section>
+            <div class="topic-number">6</div>
+
+            <h2 class="text-dark">CSS Box Model</h2>
+
+            <p class="h6">
+                Every HTML element is treated like a box.
+            </p>
+
+            <div class="example-code">
+                div { <br>
+
+                &nbsp;&nbsp;margin: 20px; <br>
+
+                &nbsp;&nbsp;padding: 20px; <br>
+
+                &nbsp;&nbsp;border: 2px solid black; <br>
+
+                }
+            </div>
+
+            <ul class="mt-4 h6">
+                <li><b>Margin</b> → Space outside the element</li>
+                <li><b>Padding</b> → Space inside the element</li>
+                <li><b>Border</b> → Surrounds the element</li>
+            </ul>
+        </section>
+
+        <!-- Flexbox -->
+
+        <section>
+            <div class="topic-number">7</div>
+
+            <h2 class="text-primary">Flexbox</h2>
+
+            <p class="h6">
+                Flexbox is used to align elements easily.
+            </p>
+
+            <div class="example-code">
+                .container { <br>
+
+                &nbsp;&nbsp;display: flex; <br>
+
+                &nbsp;&nbsp;justify-content: center; <br>
+
+                &nbsp;&nbsp;align-items: center; <br>
+
+                }
+            </div>
+        </section>
+
+        <!-- Grid -->
+
+        <section>
+            <div class="topic-number">8</div>
+
+            <h2 class="text-success">CSS Grid</h2>
+
+            <div class="example-code">
+                .container { <br>
+
+                &nbsp;&nbsp;display: grid; <br>
+
+                &nbsp;&nbsp;grid-template-columns: repeat(3, 1fr); <br>
+
+                &nbsp;&nbsp;gap: 20px; <br>
+
+                }
+            </div>
+        </section>
+
+        <!-- Hover -->
+
+        <section>
+            <div class="topic-number">9</div>
+
+            <h2 class="text-danger">Hover Effects</h2>
+
+            <div class="example-code">
+                button:hover { <br>
+
+                &nbsp;&nbsp;background: #7420fb; <br>
+
+                &nbsp;&nbsp;color: white; <br>
+
+                }
+            </div>
+        </section>
+
+        <!-- Media Query -->
+
+        <section>
+            <div class="topic-number">10</div>
+
+            <h2 class="text-secondary">Media Queries</h2>
+
+            <p class="h6">
+                Used to make websites responsive on mobile devices 📱
+            </p>
+
+            <div class="example-code">
+                @media (max-width:768px) { <br>
+
+                &nbsp;&nbsp;h1 { <br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;font-size: 25px; <br>
+
+                &nbsp;&nbsp;} <br>
+
+                }
+            </div>
+        </section>
+
+        <!-- Animation -->
+
+        <section>
+            <div class="topic-number">11</div>
+
+            <h2 class="text-warning">CSS Animation</h2>
+
+            <div class="example-code">
+                @keyframes fade { <br>
+
+                &nbsp;&nbsp;from { opacity: 0; } <br>
+
+                &nbsp;&nbsp;to { opacity: 1; } <br>
+
+                } <br><br>
+
+                div { <br>
+
+                &nbsp;&nbsp;animation: fade 2s; <br>
+
+                }
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <h5>Made with ❤️ for Beginners</h5>
+    </footer>
+
+</body>
+
+</html>
